@@ -1,7 +1,8 @@
 version: "3.8"
 services:
   pcshoneypotapi:
-    image : kosener/pcshoneypotapi
+    build: ./
+    image : pcshoneypotapi
     container_name: pcshoneypotapi
     environment:
       - BscHttpApi
