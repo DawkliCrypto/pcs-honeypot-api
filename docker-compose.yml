@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  pcshoneypotapi:
+    build: ./
+    image : pcshoneypotapi
+    container_name: pcshoneypotapi
+    environment:
+      - BscHttpApi
+    ports:
+      - 3000:3000
+    restart: always
+
