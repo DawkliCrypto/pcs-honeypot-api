@@ -29,5 +29,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: kosener/pcshoneypotapi:latest,kosener/pcshoneypotapi:$(date +%s)
+          tags: kosener/pcshoneypotapi:latest
+          snapshot: true
 
