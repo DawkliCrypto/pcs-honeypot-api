@@ -13,7 +13,8 @@ exports.getSingleContract = (req, reply) => {
         let maxTxBNB = null;
         let addressToOutput = req.params.id;
         
-        web3 = new Web3(process.env.BscHttpApi);
+        const HttpApi = process.env.BscHttpApi || 'https://bsc-dataseed1.binance.org:443';
+        web3 = new Web3(HttpApi);
         run(req.params.id)
 
         function encodeBasicFunction(web3, funcName) {
