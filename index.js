@@ -3,11 +3,12 @@ const fastify = require('fastify')({
 })
 
 const routes = require("./routes/contractRoutes")
-const PORT = 3000
 
 routes.forEach((route, index) => {
     fastify.route(route)
 })
+
+const PORT = process.env.PORT || 3000;
 
 const serve = async () => {
     try {
