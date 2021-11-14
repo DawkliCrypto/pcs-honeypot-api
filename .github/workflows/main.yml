@@ -29,6 +29,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: kosener/pcshoneypotapi:latest
+          tags: dawkliCrypto/pcshoneypotapi:latest
           snapshot: true
 
