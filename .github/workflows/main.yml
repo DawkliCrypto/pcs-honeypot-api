@@ -29,6 +29,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: dawkliCrypto/pcshoneypotapi:latest
+          tags: dawklicrypto/pcshoneypotapi:latest
           snapshot: true
 
